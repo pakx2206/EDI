@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.css">
+    <script src="script.js"></script>
+    <script src="chart.js" defer></script>
 </head>
 
 <body>
@@ -21,38 +26,7 @@
 
 
     </section>
+    <div id="chart"></div>
 </body>
 
 </html>
-
-<!-- <script>
-            const listEl = document.querySelector('tr');
-            fetch('https://my.api.mockaroo.com/project.json?key=aa2213a0')
-                .then (res => res.json())
-                .then (data => {
-                    data.forEach(get => {
-
-                        listEl.insertAdjacentHTML('beforeend', `<li>${get.first_name} ${get.last_name} ${get.age} ${get.goals} ${get.assists} ${get.yellow_cards} ${get.red_cards}</li>`);
-                        
-                    });
-                });
-        </script> -->
-<!-- <script>
-            let tab = 
-            `<tr>
-            <th>last name</th>
-
-            <th>age</th>
-
-            <th>goals</th>
-
-            <th>assists</th>
-
-            <th>yellow cards</th>
-
-            <th>red cards</th>
-         </tr>`;
-            const listEl = document.getElementById('lista');
-            fetch('https://my.api.mockaroo.com/project.json?key=aa2213a0')
-            
-        </script> -->

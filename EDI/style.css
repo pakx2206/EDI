@@ -17,9 +17,6 @@ body {
     background-color: #97a97c;
     display: flex;
     justify-content: left;
-
-
-
 }
 
 table,
@@ -49,4 +46,8 @@ table {
     margin-top: 3%;
     background-color: #E9F5DB;
     margin-left: 2%;
+}
+#chart {
+    display: flex;
+    justify-content: right;
 }
