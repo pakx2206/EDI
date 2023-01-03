@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section>
+        <h1>LISTA ZAWODNIKÓW:</h1>
+        <ul>
+
+        </ul>
+
+        <script>
+            const listEl = document.querySelector('ul');
+            fetch('./data.json')
+                .then (res => res.json())
+                .then (data => {
+                    data.forEach(get => {
+
+                        listEl.insertAdjacentHTML('beforeend', `<li>${get.first_name} ${get.last_name} ${get.age} ${get.goals} ${get.assists} ${get.yellow_cards} ${get.red_cards}</li>`);
+                        
+                    });
+                });
+        </script>
+
+            
+
+        
+    </section>
+</body>
+</html>
