@@ -1,4 +1,4 @@
-fetch("https://my.api.mockaroo.com/project.json?key=aa2213a0")
+fetch("data.json")
 
     .then((response) => response.json())
     .then((json) => {

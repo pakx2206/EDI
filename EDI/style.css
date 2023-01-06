@@ -12,11 +12,15 @@ body {
     margin: 2%;
     font-size: 48px;
 }
-
-#sec {
+#mainsec {
+    display: flex;
+    flex-direction: row;
     background-color: #97a97c;
+}
+#sec {
     display: flex;
     justify-content: left;
+    margin-right: 3vw;
 }
 
 table,
@@ -48,6 +52,14 @@ table {
     margin-left: 2%;
 }
 #chart {
-    display: flex;
-    justify-content: right;
+  height: 50vh;
+  width: 60vw;
+  display: flex;
+  justify-content: left;
+}
+footer {
+    text-align: center;
+    padding: 0%;
+    margin: 4%;
+    font-size: 20px;
 }
