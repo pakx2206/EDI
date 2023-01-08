@@ -1,8 +1,7 @@
-// Pobierz dane z pliku data.json
 fetch("data.json")
   .then(response => response.json())
   .then(data => {
-    // Uśrednij liczbę kartek w zależności od wieku
+
     const ageGroups = {};
     data.forEach(record => {
       if (!ageGroups[record.age]) {
@@ -25,7 +24,6 @@ fetch("data.json")
       };
     });
 
-    // Stwórz wykres liniowy ilości kartek w zależności od wieku
     var chart = bb.generate({
       bindto: "#chart1",
       data: {

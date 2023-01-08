@@ -1,4 +1,3 @@
-
 fetch("data.json")
   .then(response => response.json())
   .then(data => {
@@ -25,7 +24,6 @@ fetch("data.json")
       };
     });
 
-    // Stwórz wykres liniowy ilości kartek w zależności od wieku
     var chart = bb.generate({
       bindto: "#chart2",
       data: {
