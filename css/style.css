@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+* {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    background-color: #718355;
+    padding: 0;
+    margin: 0;
+}
+
+#lista {
+    margin: 2%;
+    font-size: 48px;
+}
+#mainsec {
+    display: flex;
+    flex-direction: row;
+    background-color: #97a97c;
+}
+#sec {
+    display: flex;
+    justify-content: left;
+    margin-right: 3vw;
+}
+
+table,
+tr,
+th,
+td {
+    text-align: center;
+    border: solid black 1px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+}
+
+th {
+    background-color: #B5C99A;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+table {
+    margin-top: 3%;
+    background-color: #E9F5DB;
+    margin-left: 2%;
+}
+#charts {
+    width: 60vw;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-right: 2vw;
+  }
+  #chart1 {
+  height: 50vh;
+  display: flex;
+  justify-content: left;
+  margin-top: 2%;
+  }
+  #chart2 {
+      height: 50vh;
+      display: flex;
+      justify-content: left;
+      margin-top: 2%;
+      }
+.pokazslajdow {
+        scale: 120%;
+        width: 24vw;
+        height: 60vh;;
+        margin-left: 17vw;
+        margin-top: 10vh;
+
+        overflow: hidden;
+        border: 10px solid #ffffff;
+        border-radius: 8px;
+        box-shadow: -1px 5px 15px black;
+    }
+    
+.pokazs {
+        width: 100%;
+        display: flex;
+        animation: slide 16s infinite;
+    }
+    
+@keyframes slide{
+        0%{
+            transform: translateX(0);
+        }
+        33%{
+            transform: translateX(-100%);
+        }
+        66%{
+            transform: translateX(-200%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+footer {
+    text-align: center;
+    padding: 0%;
+    margin: 4%;
+    font-size: 20px;
+}
